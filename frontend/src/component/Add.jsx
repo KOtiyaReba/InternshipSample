@@ -6,7 +6,7 @@ const Add = (props) => {
   var [inputs, setInputs] = useState({ Name: "", Age: "", Dept: "", Sal: "" });
   var location = useLocation();
   var navigate = useNavigate()
-  console.log("loc", location.state.val.Name);
+  console.log("loc", location.state);
 
   const inputHandler = (e) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
